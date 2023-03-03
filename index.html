@@ -13,13 +13,14 @@
       src="https://kit.fontawesome.com/4724b0e1a2.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="style.css" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;700&family=Poppins:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>Frontend Mentor | Huddle landing page with curved sections</title>
   </head>
   <body>
@@ -36,8 +37,10 @@
       </p>
       <a href="#">Get Started For Free</a>
     </header>
-    <div><img src="./images/screen-mockups.svg" alt="screen mockups" /></div>
-    <section>
+    <div class="mockup">
+      <img src="./images/screen-mockups.svg" alt="screen mockups" />
+    </div>
+    <section class="statistics">
       <div class="section">
         <img src="./images/icon-communities.svg" alt="icon communites" />
         <h2>1.4k+</h2>
@@ -49,7 +52,7 @@
         <p>Messages Sent</p>
       </div>
     </section>
-    <div class="grow-together">
+    <div class="picture">
       <picture>
         <source
           media="(min-width: 1024px)"
@@ -57,16 +60,22 @@
         />
         <img src="./images/bg-section-top-mobile-1.svg" alt="top background" />
       </picture>
-
+    </div>
+    <div class="grow-together">
       <div>
-        <h2>Grow Together</h2>
-        <p>
-          Generate meaningful discussions with your audience and build a strong,
-          loyal community. Think of the insightful conversations you miss out on
-          with a feedback form.
-        </p>
+        <div>
+          <h2>Grow Together</h2>
+          <p>
+            Generate meaningful discussions with your audience and build a
+            strong, loyal community. Think of the insightful conversations you
+            miss out on with a feedback form.
+          </p>
+        </div>
+
         <img src="./images/illustration-grow-together.svg" alt="two person" />
       </div>
+    </div>
+    <div class="picture">
       <picture>
         <source
           media="(min-width: 1024px)"
@@ -79,17 +88,22 @@
       </picture>
     </div>
     <div class="flowing">
-      <h2>Flowing Conversations</h2>
-      <p>
-        You wouldn't paginate a conversation in real life, so why do it online?
-        Our threads have just-in-time loading for a more natural flow.
-      </p>
-      <img
-        src="./images/illustration-flowing-conversation.svg"
-        alt="people group"
-      />
+      <div>
+        <div>
+          <h2>Flowing Conversations</h2>
+          <p>
+            You wouldn't paginate a conversation in real life, so why do it
+            online? Our threads have just-in-time loading for a more natural
+            flow.
+          </p>
+        </div>
+        <img
+          src="./images/illustration-flowing-conversation.svg"
+          alt="people group"
+        />
+      </div>
     </div>
-    <div class="your-users">
+    <div class="picture">
       <picture>
         <source
           media="(min-width: 1024px)"
@@ -97,15 +111,22 @@
         />
         <img src="./images/bg-section-top-mobile-2.svg" alt="top background" />
       </picture>
+    </div>
+    <div class="your-users">
       <div>
-        <h2>Your Users</h2>
-        <p>
-          It takes no time at all to integrate Huddle with your app's
-          authentication solution. This means, once signed in to your app, your
-          users can start chatting immediately.
-        </p>
+        <div>
+          <h2>Your Users</h2>
+          <p>
+            It takes no time at all to integrate Huddle with your app's
+            authentication solution. This means, once signed in to your app,
+            your users can start chatting immediately.
+          </p>
+        </div>
+
         <img src="./images/illustration-your-users.svg" alt="people" />
       </div>
+    </div>
+    <div class="picture">
       <picture>
         <source
           media="(min-width: 1024px)"
@@ -121,7 +142,7 @@
       <h2>Ready To Build Your Community?</h2>
       <a href="#">Get Started For Free</a>
     </div>
-    <footer>
+    <div class="picture">
       <picture>
         <source
           media="(min-width: 1024px)"
@@ -129,6 +150,8 @@
         />
         <img src="./images/bg-footer-top-mobile.svg" alt="top footer" />
       </picture>
+    </div>
+    <footer>
       <section class="lorem">
         <img src="./images/logo_white.svg" alt="logo huddle" />
         <p>

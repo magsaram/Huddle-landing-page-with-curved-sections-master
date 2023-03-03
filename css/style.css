@@ -1,2 +1,238 @@
-/* font-family: 'Open Sans', sans-serif;
-font-family: 'Poppins', sans-serif; */
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --pink: hsl(322, 100%, 66%);
+  --lightPink: hsl(321, 100%, 78%);
+  --lightRed: hsl(0, 100%, 63%);
+  --darkCyan: hsl(192, 100%, 9%);
+  --paleBlue: hsl(207, 100%, 98%);
+  --open: "Open Sans", sans-serif;
+  --poppins: "Poppins", sans-serif;
+}
+body {
+  width: 100%;
+  font-family: var(--open);
+}
+nav {
+  width: 85%;
+  margin: 24px auto 112px auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img {
+  width: 96px;
+  height: 16px;
+}
+nav a {
+  display: block;
+  padding: 5px 19px;
+  border: 1px solid var(--lightPink);
+  border-radius: 12px;
+  box-shadow: 0 0 2px 0 var(--lightPink);
+  font-size: 10px;
+  text-decoration: none;
+  color: var(--lightPink);
+}
+header {
+  margin: 0 auto 104px;
+  width: 80%;
+  text-align: center;
+}
+h1 {
+  margin-bottom: 24px;
+  font-family: var(--poppins);
+  font-size: 24px;
+  line-height: 36px;
+}
+header p {
+  margin-bottom: 48px;
+  font-size: 14px;
+  line-height: 21px;
+}
+header a,
+.ready a {
+  padding: 11px 40px;
+  background-color: var(--pink);
+  border-radius: 20px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.13);
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: white;
+}
+.mockup {
+  width: 80%;
+  margin: 0 auto 102px;
+}
+.mockup img {
+  width: 100%;
+}
+.statistics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+}
+.statistics div:first-of-type img {
+  width: 36px;
+}
+.statistics div:first-of-type h2 {
+  font-size: 70px;
+  font-weight: 700;
+}
+.statistics div:first-of-type p {
+  margin-bottom: 88px;
+  font-size: 16px;
+  color: #808e9a;
+  text-align: center;
+}
+.statistics div:last-of-type img {
+  width: 31px;
+}
+.statistics div:last-of-type h2 {
+  font-size: 54px;
+  font-weight: 700;
+}
+.statistics div:last-of-type p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #808e9a;
+  text-align: center;
+}
+.picture {
+  font-size: 0;
+}
+.grow-together,
+.flowing,
+.your-users {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.grow-together h2,
+.flowing h2,
+.your-users h2 {
+  margin: 40px 0 16px;
+  font-family: var(--poppins);
+  font-size: 20px;
+}
+.grow-together p,
+.flowing p,
+.your-users p {
+  width: 80%;
+  margin: 16px auto 50px;
+  font-size: 14px;
+}
+.grow-together img,
+.flowing img,
+.your-users img {
+  width: 80%;
+  margin: 80px auto 0;
+}
+.grow-together > div,
+.your-users > div {
+  display: flex;
+  flex-direction: column-reverse;
+  background-color: var(--paleBlue);
+}
+.flowing > div {
+  margin: 60px auto 60px;
+  display: flex;
+  flex-direction: column-reverse;
+}
+.flowing h2 {
+  margin: 80px auto 16px;
+}
+.your-users img {
+  margin: 30px auto 40px;
+}
+.your-users p {
+  margin-bottom: 130px;
+}
+.ready {
+  width: 90%;
+  margin: 80px auto 251px;
+  text-align: center;
+}
+.ready h2 {
+  margin-bottom: 40px;
+  font-family: var(--poppins);
+  font-size: 24px;
+  line-height: 36px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #00252e;
+  color: white;
+}
+.lorem,
+.newsletter {
+  width: 85%;
+  margin: 0 auto;
+}
+footer section:last-of-type {
+  order: -1;
+  margin: 80px auto 104px;
+}
+.box p {
+  display: none;
+}
+footer h3 {
+  margin-bottom: 16px;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+footer p {
+  margin-bottom: 32px;
+  font-size: 14px;
+  line-height: 24px;
+}
+.box {
+  width: 100%;
+  margin-bottom: 16px;
+  max-width: 400px;
+  height: 48px;
+  background-color: white;
+  border-radius: 6px;
+}
+.newsletter a {
+  display: inline-block;
+  padding: 12px 41px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  text-decoration: none;
+  background-color: var(--pink);
+  border-radius: 8px;
+  transform: translateX(0100%);
+}
+.lorem > img:first-of-type {
+  width: 60%;
+  margin-bottom: 15px;
+}
+.lorem img {
+  margin-right: 16px;
+}
+.phone img,
+.mail img {
+  transform: translateY(+25%);
+}
+.social a {
+  font-size: 30px;
+  color: white;
+  margin-right: 16px;
+}
+.frontend {
+  text-align: center;
+  margin: 0;
+}
+.frontend a {
+  color: white;
+  text-decoration: none;
+}
